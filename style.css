@@ -1,0 +1,142 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+@font-face {
+  font-family: "TTLakes-Regular";
+  src: url("font/TTLakes-Regular.woff") format("woff"),
+    url("font/TTLakes-Regular.ttf") format("truetype");
+}
+.brand-menu__fade {
+  background: linear-gradient(to right, transparent, #f8f8f8);
+  height: 76px;
+  width: 24px;
+  position: absolute;
+  right: 0px;
+  z-index: 2;
+  padding: 12px 0px 0px 0px;
+}
+.brand-menu__button_show_all {
+  display: none;
+}
+.brand-menu {
+  background-color: #f8f8f8;
+  margin: 0 auto;
+  width: 100%;
+}
+.heading__text {
+  font-family: "TTLakes-Regular";
+  font-size: 16px;
+  letter-spacing: -0.2px;
+  line-height: 24px;
+  padding: 16px;
+  background: linear-gradient(270deg, #ffffff 0%, #f8f8f8 98.61%);
+  color: rgba(126, 126, 130, 1);
+}
+.hidden {
+  display: none !important;
+}
+
+.swiper .content-card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 240px;
+  padding: 16px 16px 16px 16px;
+  box-sizing: border-box;
+  background-color: white;
+  height: 72px;
+  border: solid 1px rgba(234, 234, 234, 1);
+  border-radius: 6px;
+}
+.brand-menu .swiper .swiper-pagination {
+  bottom: -3px;
+  background-color: #f8f8f8;
+}
+.swiper-wrapper {
+  padding: 16px;
+  height: auto;
+}
+.Swiper1 .swiper-pagination-bullet {
+  background-color: rgba(221, 221, 221, 1);
+  width: 12px;
+  height: 12px;
+  opacity: 1;
+}
+.brand-menu .swiper {
+  background-color: #f8f8f8;
+}
+.Swiper1 .swiper-pagination-bullet-active {
+  background-color: #808080;
+  width: 12px;
+  height: 12px;
+}
+.content-card button {
+  background-color: inherit;
+  border: none;
+}
+.content-card button img {
+  cursor: pointer;
+}
+.is-visible {
+  display: block;
+}
+.swiper .swiper-slide {
+  width: auto;
+}
+@media (min-width: 769px) {
+  .brand-menu__fade {
+    display: none;
+  }
+  .brand-menu__button_show_all {
+    cursor: pointer;
+    background-color: inherit;
+    border: none;
+    display: flex;
+    width: auto;
+    font-weight: bold;
+    font-family: "TTLakes-Regular";
+    font-size: 16px;
+    padding: 0px 0px 0px 32px;
+    gap: 18px;
+    letter-spacing: -0.2px;
+    align-items: center;
+  }
+  .brand-menu {
+    width: 769px;
+  }
+  .heading__text {
+    padding: 16px 0px 16px 24px;
+  }
+  .swiper .swiper-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 24px;
+    background-color: #f8f8f8;
+    width: auto;
+    gap: 16px 24px;
+  }
+  .swiper .swiper-slide {
+    flex-shrink: 1;
+    display: flex;
+    flex-wrap: wrap;
+    width: 224px;
+    height: 72px;
+  }
+  .swiper .swiper-pagination {
+    display: none;
+  }
+
+  @media (min-width: 1120px) {
+    .brand-menu {
+      width: 1120px;
+    }
+    .swiper .swiper-wrapper {
+      display: flex;
+      gap: 16px 32px;
+    }
+    .swiper .swiper-pagination {
+      display: none;
+    }
+  }
+}
